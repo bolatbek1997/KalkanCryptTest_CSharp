@@ -159,8 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\lib\readme.txt" />
-    <Content Include="lib\lib\x64\KalkanCryptCOM.dll" />
-    <Content Include="lib\lib\x86\KalkanCryptCOM.dll" />
+    <Content Include="lib\lib\x64\KalkanCryptCOM.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\lib\x86\KalkanCryptCOM.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
